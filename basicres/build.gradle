@@ -20,7 +20,7 @@ android {
         }
     }
 
-    resourcePrefix "common_"
+   /* resourcePrefix "common_" 通用先暂时不用强制加前缀*/
 }
 
 dependencies {

@@ -12,9 +12,9 @@
             <option value="$PROJECT_DIR$/basiclib" />
             <option value="$PROJECT_DIR$/basicres" />
             <option value="$PROJECT_DIR$/build-gradle" />
+            <option value="$PROJECT_DIR$/chipcomponent" />
             <option value="$PROJECT_DIR$/componentlib" />
             <option value="$PROJECT_DIR$/componentservice" />
-            <option value="$PROJECT_DIR$/login" />
             <option value="$PROJECT_DIR$/readercomponent" />
             <option value="$PROJECT_DIR$/router-anno-compiler" />
             <option value="$PROJECT_DIR$/router-annotation" />

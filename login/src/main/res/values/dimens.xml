@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_small_text_size">13sp</dimen>
+    <dimen name="login_normal_text_size">15sp</dimen>
+    <dimen name="login_big_text_size">18sp</dimen>
+    <dimen name="login_title_text_size">30sp</dimen>
+    <dimen name="login_lv_title_height">40sp</dimen>
+    <dimen name="login_lv_item_height">30sp</dimen>
+
+</resources>

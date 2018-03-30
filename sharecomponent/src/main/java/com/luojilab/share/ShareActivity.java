@@ -57,6 +57,11 @@ public class ShareActivity extends BaseActivity {
     }
 
     @Override
+    protected void initData() {
+
+    }
+
+    @Override
     protected void updateViews(boolean isRefresh) {
 
     }

@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RetrofitFactory {
-   public static String BASE_URL = "http://hhhmis.f3322.net:8013/supervise_app_bjaj/";
+   public static String BASE_URL = "http://192.168.3.33:8005/jcjg/";
     public static final int  MSG_SUCESS=1, MSG_FAIL=0,MSG_OTHER=2;
     // 设置超时
     private static final long TIMEOUT = 30;

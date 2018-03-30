@@ -14,8 +14,6 @@ import com.luojilab.component.basiclib.widget.EmptyLayout;
 
 import javax.inject.Inject;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * Created by long on 2016/8/19.
@@ -56,7 +54,6 @@ public abstract class BaseFragment<T extends IBasePresenter> extends com.trello.
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         fragmentView = inflater.inflate(attachLayoutRes(),container,false);
-        ButterKnife.bind(this, fragmentView);
         mActivity = getActivity();
         mEmptyLayout = (EmptyLayout) mActivity.findViewById(R.id.empty_layout);
         initInjector();

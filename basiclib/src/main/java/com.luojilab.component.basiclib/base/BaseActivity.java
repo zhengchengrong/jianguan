@@ -9,6 +9,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.luojilab.component.basiclib.R;
 import com.luojilab.component.basiclib.widget.EmptyLayout;
@@ -18,8 +20,6 @@ import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 import javax.inject.Inject;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
 /**
@@ -41,6 +41,13 @@ public abstract class BaseActivity<T extends IBasePresenter> extends RxAppCompat
     @Inject
     protected T mPresenter;
 
+    @Nullable
+    protected TextView mTvTitle;
+    @Nullable
+    protected TextView mOther;
+    @Nullable
+    protected TextView mTvBack;
+
 
     /**
      * 绑定布局文件
@@ -59,7 +66,10 @@ public abstract class BaseActivity<T extends IBasePresenter> extends RxAppCompat
      * 初始化视图控件
      */
     protected abstract void initViews();
-
+    /**
+     * 访问网络数据
+     */
+    protected abstract void initData();
     /**
      * 更新视图控件
      */
@@ -71,13 +81,32 @@ public abstract class BaseActivity<T extends IBasePresenter> extends RxAppCompat
         super.onCreate(savedInstanceState);
         AutowiredService.Factory.getInstance().create().autowire(this);
         setContentView(attachLayoutRes());
-        ButterKnife.bind(this);
         mEmptyLayout = (EmptyLayout) this.findViewById(R.id.empty_layout);
+        mTvTitle = this.findViewById(R.id.tv_title);
+        mOther = this.findViewById(R.id.other);
+        mTvBack = this.findViewById(R.id.tv_back);
+
         initInjector();
         initViews();
+        initData();//访问网络数据
         updateViews(false);
     }
 
+    // 初始化标题
+    public void initTitle(boolean isShowBack,String title) {
+        if(isShowBack){
+            mTvBack.setVisibility(View.VISIBLE);
+            mTvBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finish();
+                }
+            });
+        }else{
+            mTvBack.setVisibility(View.GONE);
+        }
+        mTvTitle.setText(title);
+    }
 
 
     @Override

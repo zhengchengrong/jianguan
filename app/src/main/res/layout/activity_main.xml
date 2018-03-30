@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="加载分享组件"
-            android:textColor="@color/common_color_black" />
+            />
 
         <Button
             android:id="@+id/uninstall_share"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:text="卸载分享组件"
-            android:textColor="@color/common_color_black" />
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="加载登陆组件"
-            android:textColor="@color/common_color_black" />
+     />
 
         <Button
             android:id="@+id/uninstall_login"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:text="卸载登陆组件"
-            android:textColor="@color/common_color_black" />
+            />
     </LinearLayout>
     <FrameLayout
         android:id="@+id/tab_content"

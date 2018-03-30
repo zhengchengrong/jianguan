@@ -26,7 +26,14 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    //design包
+    compile "com.android.support:design:${rootProject.ext.support}"
+    //cardView包
+    compile "com.android.support:cardview-v7:${rootProject.ext.support}"
+    //appcompat包
     compile "com.android.support:appcompat-v7:${rootProject.ext.support}"
+    //recyclerview包
+    compile "com.android.support:recyclerview-v7:${rootProject.ext.support}"
     testCompile 'junit:junit:4.12'
     // rx 事件通知框架 http://gank.io/post/560e15be2dca930e00da1083
     compile 'io.reactivex.rxjava2:rxjava:2.1.1'
@@ -51,9 +58,11 @@ dependencies {
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
     // 加载进度条框架
     compile 'com.github.ybq:Android-SpinKit:1.1.0'
-    // 注解框架
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //轮播图框架
+    compile 'com.youth.banner:banner:1.4.10'
     //UI跳转 框架
     compile project(":componentlib")
+    // 功能强大的View，可以满足日常大部分布局样式 https://github.com/lygttpod/SuperTextView
+    compile 'com.github.lygttpod:SuperTextView:2.1.6'
+
 }

@@ -31,10 +31,10 @@ android {
 }
 
 dependencies {
-    implementation project(':componentservice')
-    annotationProcessor project(':router-anno-compiler')
+    compile project(':componentservice')
+
 }
 combuild {
-    applicationName = 'com.zcr.mymodulproject.AppApplication'
+    applicationName = 'com.jg.mymodulproject.AppApplication'
     isRegisterCompoAuto = true
 }

@@ -66,6 +66,7 @@ public class Const {
     public static final String NO_SD = "SD卡不存在，无法照相!";
     public static final String PATH = "path";
     public static final String PATH_ID = "pathId";
+    public static final String USERNAME = "username";
 
 
     private Const() {

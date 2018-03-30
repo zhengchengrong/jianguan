@@ -16,9 +16,6 @@ import com.luojilab.component.basiclib.R;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * Created by long on 2016/8/23.
@@ -68,8 +65,8 @@ public class EmptyLayout extends FrameLayout implements View.OnClickListener {
         mTvErrorMessage.setOnClickListener(this);
         mTvEmptyMessage = view.findViewById(R.id.tv_net_empty);
         mRlEmptyContainer = view.findViewById(R.id.rl_empty_container);
-        mEmptyLoading = view.findViewById(R.id.empty_loading);
-        mEmptyLoading = (SpinKitView)view.findViewById(R.id.empty_layout);
+        mEmptyLayout = view.findViewById(R.id.empty_layout);
+        mEmptyLoading = (SpinKitView)view.findViewById(R.id.empty_loading);
         mEmptyLayout.setBackgroundColor(mBgColor);
         _switchEmptyView();
     }

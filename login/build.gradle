@@ -40,7 +40,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile project(':componentservice')
-    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+}
+combuild {
+    applicationName = 'com.jg.login.applike.LoginAppLike'
+    isRegisterCompoAuto = false
 }
 repositories {
     mavenCentral()

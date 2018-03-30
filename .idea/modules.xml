@@ -6,10 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/basiclib/basiclib.iml" filepath="$PROJECT_DIR$/basiclib/basiclib.iml" />
       <module fileurl="file://$PROJECT_DIR$/basicres/basicres.iml" filepath="$PROJECT_DIR$/basicres/basicres.iml" />
       <module fileurl="file://$PROJECT_DIR$/build-gradle/build-gradle.iml" filepath="$PROJECT_DIR$/build-gradle/build-gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chipcomponent/chipcomponent.iml" filepath="$PROJECT_DIR$/chipcomponent/chipcomponent.iml" />
       <module fileurl="file://$PROJECT_DIR$/componentlib/componentlib.iml" filepath="$PROJECT_DIR$/componentlib/componentlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/componentservice/componentservice.iml" filepath="$PROJECT_DIR$/componentservice/componentservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/jianguan.iml" filepath="$PROJECT_DIR$/jianguan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/readercomponent/readercomponent.iml" filepath="$PROJECT_DIR$/readercomponent/readercomponent.iml" />
       <module fileurl="file://$PROJECT_DIR$/router-anno-compiler/router-anno-compiler.iml" filepath="$PROJECT_DIR$/router-anno-compiler/router-anno-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/router-annotation/router-annotation.iml" filepath="$PROJECT_DIR$/router-annotation/router-annotation.iml" />

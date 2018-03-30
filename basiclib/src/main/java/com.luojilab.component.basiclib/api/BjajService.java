@@ -1,6 +1,9 @@
 package com.luojilab.component.basiclib.api;
 
 
+import com.luojilab.component.basiclib.bean.BaseEntity;
+import com.luojilab.component.basiclib.bean.login.UserBean;
+
 import io.reactivex.Observable;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
@@ -12,6 +15,10 @@ import retrofit2.http.POST;
  */
 
 public interface BjajService {
+
+    @FormUrlEncoded
+    @POST("api/jzqy/postLogin")
+    Observable<BaseEntity<UserBean>> toLogin(@Field("username") String username,@Field("password")String password);
 
     //获取变更记录
 /*    @POST("monitorInfo/getMonitorInfo")

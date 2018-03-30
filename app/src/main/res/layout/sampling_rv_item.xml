@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.SuperTextView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/super_tv"
+android:layout_width="match_parent"
+android:layout_height="@dimen/dp_60"
+xmlns:stv="http://schemas.android.com/apk/res-auto"
+stv:sCenterBottomTextColor="@color/colorAccent"
+stv:sCenterTopTextString=" "
+stv:sCenterViewGravity="left_center"
+stv:sLeftIconRes="@drawable/sampling_icon"
+stv:sLeftTextString="综合整治工程(一期)"
+stv:sRightIconRes="@drawable/right_arrow"
+stv:sLeftViewGravity="left_center" />
