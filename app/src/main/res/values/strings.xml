@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">监管通</string>
+    <string name="network_err">网络错误</string>
 </resources>

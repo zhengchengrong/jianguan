@@ -79,14 +79,14 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                     RxToast.showToast(Const.INPUT_PASSWORD);
                     return;
                 }
-            /*    dialog = new ProgressDialog(this);
+                dialog = new ProgressDialog(this);
                 dialog.setCanceledOnTouchOutside(false);
                 dialog.setCancelable(true);
                 dialog.setTitle("正在登录...");
                 dialog.show();
-                toLogin(username,password);*/
-                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                startActivity(intent);
+                toLogin(username,password);
+    /*            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(intent);*/
                 break;
         }
     }

@@ -54,6 +54,7 @@ public class SamplingDetailActivity extends BaseActivity {
         initTitle(true,"工程概况");
         mRvContent = this.findViewById(R.id.rv_content);
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeLayout);
+        mSwipeRefreshLayout.setColorSchemeResources(R.color.main_color);
         mRvContent.setLayoutManager(new LinearLayoutManager(this));
         mSamplingBeans = new ArrayList<SamplingBean>();
         mBaseQuickAdapter = new BaseQuickAdapter<SamplingBean, BaseViewHolder>(R.layout.sampling_rv_detail_item, mSamplingBeans) {
