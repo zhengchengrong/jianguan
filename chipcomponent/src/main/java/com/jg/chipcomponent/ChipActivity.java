@@ -33,6 +33,7 @@ public class ChipActivity extends BaseActivity {
 
     @Override
     protected void initViews() {
+        initTitle(true,"芯片扫描");
         if(bookName!=null){
             RxToast.showToast(bookName+":"+author);
         }
