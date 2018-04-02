@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/chipcomponent/chipcomponent.iml" filepath="$PROJECT_DIR$/chipcomponent/chipcomponent.iml" />
       <module fileurl="file://$PROJECT_DIR$/componentlib/componentlib.iml" filepath="$PROJECT_DIR$/componentlib/componentlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/componentservice/componentservice.iml" filepath="$PROJECT_DIR$/componentservice/componentservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jianguan.iml" filepath="$PROJECT_DIR$/jianguan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jianguan-master.iml" filepath="$PROJECT_DIR$/jianguan-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/router-anno-compiler/router-anno-compiler.iml" filepath="$PROJECT_DIR$/router-anno-compiler/router-anno-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/router-annotation/router-annotation.iml" filepath="$PROJECT_DIR$/router-annotation/router-annotation.iml" />
     </modules>

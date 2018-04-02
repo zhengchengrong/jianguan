@@ -34,8 +34,8 @@ ext {
     compileSdk = 26  // 控制可以使用哪个版本的api,告诉 Gradle 用哪个 Android SDK 版本编译你的应用 使用任何新添加的 API 就需要使用对应版本的 Android SDK。 如果使用 Support Library ，那么使用最新发布的 Support Library 就需要使用最新的 SDK 编译。例如，要使用 23.1.1 版本的 Support Library ，compileSdkVersion 就必需至少是 23 。
     minSdk = 14     // 应用可以运行的最低要求 低于minSdkVersion的手机将无法安装
     targetSdk = 26  // 应用的兼容模式
-    support = "26.+"
-    buildTools = "26.0.2"
+    support = "27.0.2"
+    buildTools = "27.0.2"
     versionCode = 1
     versionName = "1.0.0"
     gsonVersion ="2.8.2"
