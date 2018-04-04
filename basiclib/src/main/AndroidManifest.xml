@@ -5,7 +5,14 @@
 
     <application
      >
+        <!-- 百度定位配置 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YLbpXAnSknacddCejKwbp6dZuQdwrmwI" >
+        </meta-data>
 
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
     </application>
 
 </manifest>

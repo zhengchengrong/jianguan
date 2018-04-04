@@ -8,7 +8,6 @@ import com.jg.mymodulproject.login.LoginActivity;
 import com.luojilab.component.basiclib.base.BaseActivity;
 import com.luojilab.component.componentlib.router.ui.UIRouter;
 import com.luojilab.router.facade.annotation.RouteNode;
-import com.zcr.mymodulproject.R;
 
 /**
  * Created by llz on 2018/3/28.

@@ -2,6 +2,8 @@ package com.luojilab.component.basiclib.api;
 
 
 import com.luojilab.component.basiclib.bean.BaseEntity;
+import com.luojilab.component.basiclib.bean.QrcodeInfoBean;
+import com.luojilab.component.basiclib.bean.SamplingDetailBean;
 import com.luojilab.component.basiclib.bean.SamplingResBean;
 import com.luojilab.component.basiclib.bean.login.UserBean;
 
@@ -25,6 +27,20 @@ public interface BjajService {
 
     @GET("api/jzqy/getProject")
     Observable<BaseEntity<SamplingResBean>> getProject(@Query("username") String username, @Query("password") String password);
+    @GET("api/jzqy/getSampleInfo")
+    Observable<BaseEntity<SamplingDetailBean>> getSampleInfo(@Query("username") String username, @Query("password") String password, @Query("zljdbm") String zljdbm);
+    @GET("api/jzqy/getQrcodeInfo")
+    Observable<BaseEntity<QrcodeInfoBean>> getQrcodeInfo(@Query("qrcode") String qrcode, @Query("id") String id);
+
+    @FormUrlEncoded
+    @POST("api/jzqy/postQrcodeMap")
+    Observable<BaseEntity<UserBean>> postQrcodeMap(@Field("id") String id,@Field("qrcode")String qrcode,@Field("maplocation")String maplocation,@Field("wtmanlongitude")String wtmanlongitude,@Field("wtmanlatitude")String wtmanlatitude,@Field("jzmanlongitude")String jzmanlongitude,@Field("jzmanlatitude")String jzmanlatitude,@Field("flag")String flag,@Field("jzuserid")String jzuserid);
+
+
+    @FormUrlEncoded
+    @POST("api/jzqy/postImg")
+    Observable<BaseEntity<UserBean>> postImg(@Field("id") String id,@Field("picname")String picname,@Field("filed")String filed,@Field("district")String district);
+
     //获取变更记录
 /*    @POST("monitorInfo/getMonitorInfo")
     Observable<BaseBeanRsp<SupervisionPlanFirstRsp>> getMonitorInfo2(@Body SupervisionPlanFirstReq req);*/

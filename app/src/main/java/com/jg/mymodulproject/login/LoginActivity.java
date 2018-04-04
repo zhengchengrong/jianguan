@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.jg.mymodulproject.R;
 import com.jg.mymodulproject.home.HomeActivity;
 import com.jg.mymodulproject.widget.CodeView;
 import com.luojilab.component.basiclib.Const;
@@ -22,7 +23,6 @@ import com.luojilab.component.basiclib.utils.RxToast;
 import com.luojilab.component.basiclib.utils.RxTool;
 import com.luojilab.component.basiclib.widget.SuperEditText;
 import com.luojilab.router.facade.annotation.RouteNode;
-import com.zcr.mymodulproject.R;
 
 import io.reactivex.Observable;
 

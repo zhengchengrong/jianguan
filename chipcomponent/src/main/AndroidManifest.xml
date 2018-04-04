@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jg.chipcomponent">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
 
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- 要求当前设备必须要有NFC芯片 -->
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
     <application
  >
-
         <activity android:name=".ChipActivity"/>
+        <activity android:name=".ChipAddActivity" />
+        <activity android:name=".RunNFCActivity"
+            android:launchMode="singleTop"
+            />
+        <activity android:name=".nfc.NfcActivity"
+            android:launchMode="singleTop"
+            />
     </application>
 
 </manifest>

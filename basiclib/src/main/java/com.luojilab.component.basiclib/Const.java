@@ -67,6 +67,8 @@ public class Const {
     public static final String PATH = "path";
     public static final String PATH_ID = "pathId";
     public static final String USERNAME = "username";
+    public static final String ZLJDBM = "zljdbm";
+    public static final String CODE = "code";
 
 
     private Const() {

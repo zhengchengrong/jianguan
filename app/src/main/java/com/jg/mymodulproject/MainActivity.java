@@ -13,7 +13,6 @@ import com.luojilab.component.basicres.BaseApplication;
 import com.luojilab.component.componentlib.router.Router;
 import com.luojilab.componentservice.readerbook.ReadBookService;
 import com.luojilab.router.facade.annotation.RouteNode;
-import com.zcr.mymodulproject.R;
 
 
 @RouteNode(path = "/main", desc = "首页")

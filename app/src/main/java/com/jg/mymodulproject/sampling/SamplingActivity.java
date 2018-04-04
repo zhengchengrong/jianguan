@@ -11,6 +11,7 @@ import android.view.View;
 import com.allen.library.SuperTextView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
+import com.jg.mymodulproject.R;
 import com.jg.mymodulproject.bean.SamplingBean;
 import com.luojilab.component.basiclib.Const;
 import com.luojilab.component.basiclib.api.BaseObserver;
@@ -21,7 +22,6 @@ import com.luojilab.component.basiclib.bean.BaseEntity;
 import com.luojilab.component.basiclib.bean.SamplingResBean;
 import com.luojilab.component.basiclib.utils.RxSPTool;
 import com.luojilab.component.basiclib.utils.RxToast;
-import com.zcr.mymodulproject.R;
 
 import java.util.ArrayList;
 
@@ -83,6 +83,7 @@ public class SamplingActivity extends BaseActivity {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 Intent intent = new Intent(SamplingActivity.this,SamplingDetailActivity.class);
+                intent.putExtra(Const.ZLJDBM,mSamplingBeans.get(position).getZljdbm());
                 startActivity(intent);
             }
         });
@@ -132,7 +133,7 @@ public class SamplingActivity extends BaseActivity {
             }
             @Override
             protected void onHandleEmpty(BaseEntity<SamplingResBean> t) {
-                RxToast.showToast(R.string.network_err);
+                RxToast.showToast(t.getDescription());
                 mBaseQuickAdapter.loadMoreFail();
             }
         });

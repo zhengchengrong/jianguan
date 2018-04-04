@@ -9,16 +9,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.jg.mymodulproject.R;
 import com.jg.mymodulproject.bean.GetMenusListRsp;
 import com.jg.mymodulproject.home.HomeActivity;
 import com.jg.mymodulproject.sampling.SamplingActivity;
+import com.jg.mymodulproject.sampling.SamplingDetailActivity;
 import com.jg.mymodulproject.utils.VHUtil;
 import com.luojilab.component.basiclib.Const;
 import com.luojilab.component.basiclib.bean.login.UserBean;
 import com.luojilab.component.basiclib.utils.RxGlideTools;
-import com.zcr.mymodulproject.R;
+import com.luojilab.component.componentlib.router.ui.UIRouter;
 
 
 import java.util.ArrayList;
@@ -81,12 +81,16 @@ public class MenusGridviewAdapter extends android.widget.BaseAdapter {
         public void onClick(View view) {
             Intent  intent;
             switch (pos) {
-                case 0:  //工程信息
+                case 0:  //取样端
                     intent = new Intent(activity, SamplingActivity.class);
                     Bundle bundle1 = new Bundle();
-                    intent.putExtra(Const.PROJECTNAME, mUserBean.getUsername());
+                    intent.putExtra(Const.ZLJDBM, mUserBean.getUsername());
                     intent.putExtras(bundle1);
                     activity.startActivity(intent);
+                    break;
+                case 1:  //见证端
+                    Bundle bundle = new Bundle();
+                    UIRouter.getInstance().openUri(activity, "DDComp://chip/chipPage", bundle); // share host
                     break;
                 default:
                     break;

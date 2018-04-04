@@ -1,1 +1,1 @@
-include ':app', ':basicres', ':basiclib', ':build-gradle', ':router-annotation', ':componentlib', ':componentservice', ':router-anno-compiler', ':chipcomponent'
+include ':app', ':basicres', ':basiclib', ':build-gradle', ':router-annotation', ':componentlib', ':componentservice', ':router-anno-compiler', ':chipcomponent', ':zbarcode'

@@ -1,11 +1,12 @@
 package com.jg.mymodulproject.home;
 
+import android.Manifest;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.jg.mymodulproject.R;
 import com.jg.mymodulproject.adapter.MenusGridviewAdapter;
 import com.jg.mymodulproject.bean.GetMenusListRsp;
 import com.jg.mymodulproject.utils.GlideImageLoader;
@@ -16,10 +17,11 @@ import com.luojilab.component.basiclib.bean.login.UserBean;
 import com.luojilab.component.basiclib.utils.RxSPTool;
 import com.youth.banner.Banner;
 import com.youth.banner.loader.ImageLoader;
-import com.zcr.mymodulproject.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import kr.co.namee.permissiongen.PermissionGen;
 
 
 /**
@@ -80,7 +82,17 @@ public class HomeActivity extends BaseActivity {
         listRsps.add(getMenusListRsp3);
         listRsps.add(getMenusListRsp4);
         adapter.DateNotify(listRsps);
-
+        // 缺少权限时, 进入权限配置页面
+        //存储授权
+        PermissionGen.with(HomeActivity.this)
+                .addRequestCode(100)
+                .permissions(
+                        Manifest.permission.ACCESS_COARSE_LOCATION,
+                        Manifest.permission.READ_PHONE_STATE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.CAMERA,
+                        Manifest.permission.RECORD_AUDIO,Manifest.permission.WAKE_LOCK)
+                .request();
     }
 
     @Override
@@ -104,5 +116,10 @@ public class HomeActivity extends BaseActivity {
         super.onStop();
         //结束轮播
         mBanner.stopAutoPlay();
+    }
+
+    @Override public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                                                     int[] grantResults) {
+        PermissionGen.onRequestPermissionsResult(this, requestCode, permissions, grantResults);
     }
 }

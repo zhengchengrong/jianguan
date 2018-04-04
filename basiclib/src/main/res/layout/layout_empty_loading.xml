@@ -31,6 +31,7 @@
             android:layout_marginTop="8dp"
             android:gravity="center"
             android:textColor="@color/black"
+            android:text="抱歉，没有取样信息"
             android:textSize="16sp"/>
     </FrameLayout>
 

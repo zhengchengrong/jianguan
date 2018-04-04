@@ -4,6 +4,5 @@ HOST : chip
 
 –æ∆¨…®√Ë
 /chipPage
-author:com.luojilab.componentservice.share.bean.Author
-bookName:String
+id:String
 
